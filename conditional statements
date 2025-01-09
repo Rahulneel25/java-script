@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=5
+        let b=10
+        if(a<b){
+            document.write("hi shiva","<br>")
+        }
+        document.write("welcome to chillapuram")
+    </script>
+
+</body>
+
+  
+</html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=5
+        let b=10
+        if(a<b){
+            document.write("hi rahul","<br>")
+        }else{
+            document.write("hi dharma","<br>")
+        }
+        document.write("welcome to warangal")
+
+        if(a>b){
+            document.write("hi anand","<br>")
+        }
+    </script>
+</body>
+</html>
+              age=prompt("enter your age")
+        name=prompt("enter your name?")
+        if(age<18){
+            alert(name+ "you are too young to marry")
+        }else if(age>35){
+            alert(name+"youre cant marry go to chillapuram")
+        }else{
+            alert(name+"perfect age to marry")
+        }
+        alert("welcome to warangal")
+
+          a=prompt()
+        b=prompt()
+        let c= a+b
+        if(a||b>300){
+            alert( "teamup")
+        }else if(c<500){
+            alert("teamup")
+        }else{
+            alert("cant teamup")
+        }
+        alert("welcome to warangal")
+
+          Condtional statements
+Set insruction executes when only given cond is true
+Follows line – line sequential  format
+BLOCK OF CODE-it will execute when cond is true
+Condition –an expression that evaluates an result(True or False)
+Ex- console.log(5>6)
+ If-1 condition
+-If(condition){
+Block code
+}
+-If-else-2 condition
+-Else if  
+-Switch
+-Ternary 
