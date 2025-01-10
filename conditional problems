@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("give a number"))
+        if(a%2==0||a%3==0){
+            alert("divisible")
+        }else if(a%2==0&&a%3==0){
+            alert("divided")
+        }else{
+            alert("not divided")
+        }
+        document.write("welcome")
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("working"))
+        let b = parseInt(prompt("absent"))
+        let e = a-b
+        let c = e/a
+        let att = c*100
+        if(att<75){
+            alert("not eligible")
+        } else {
+            document.write("eligible")
+            alert("elgible")
+        }
+        document.write("welcome")
+
+    </script>
+    
+</body>
+</html>
+
+
+          
+2211CS010155- MUTYALA RAHULNEEL <2211cs010155@mallareddyuniversity.ac.in>
+09:48 (36 minutes ago)
+to 2211cs010036, 2211cs010119, 2211CS010178
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("give a number"))
+        let b = parseInt(prompt("give another"))
+        let c = parseInt(prompt("give another number"))
+        if(a > b && a > c){
+            alert("a")
+        } else if(b > a && b > c){
+            alert("b")
+        } else {
+            alert("c")
+        }
+        document.write("welcome")
+
+    </script>
+    
+</body>
+</html>
+
+          
