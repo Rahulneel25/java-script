@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("period of service"))
+        switch(true){
+            case num>=0:
+                console.log("greater")
+                break;
+            case num<0:
+                console.log("lesser")
+                break;
+            default:
+                console.log("invalid")
+        }
+        document.write("")
+
+    </script>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = prompt("Enter weekday")
+        switch(true){
+            case day === "monday" || day === "tuesday" || day === "wednesday" || day === "thursday" || day === "friday":
+                document.write("weekday")
+                break;
+            case day === "saturday" || day === "sunday":
+                document.write("weekend")
+                break;
+            default:
+                document.write("invalid")
+        }
+        document.write("")
+
+    </script>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("units"))
+        if(num>=0&&num<50){
+            document.write("2 per unit: " + (num * 2) )
+        }
+        else if(num>50&&num<=150){
+            document.write("3 per unit: " + (num * 3))
+        }
+        else if(num>150&&num<=250){
+            let amount = num * 5;
+            let tax = amount * 0.20;
+            document.write("5 per unit: " + (amount + tax))
+        }
+        else if(num>250){
+            document.write("8 per unit: " + (num * 8))
+        }
+        else{
+            document.write("invalid")
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        let people = parseInt(prompt("enter the number of people"))
+        let handshakes = people * (people-1)/2
+        document.write(handshakes)
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("number"))
+        if(a%1==0||a%a==0){
+            document.write("prime number")
+        }else if(a == 2||a == 3){
+            document.write("prime number")
+        }else{
+            document.write("not a prime")
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("number"))
+        if(a%2==!0||a%3==!0){
+            document.write("prime number")
+        }else if(a == 2||a == 3){
+            document.write("prime number")
+        }else{
+            document.write("not a prime")
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("give a number"))
+        let b = parseInt(a.toString().split('').reverse().join(''))
+        if(a===b){
+            document.write("palindrome")
+        }
+        else(
+            document.write("not palindrome")
+        )   
+        document.write(b)
+    </script>
+
+</body>
+</html>
+
+
