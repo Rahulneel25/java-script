@@ -1,0 +1,54 @@
+for(initialisation; condition, operation){
+block of code
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for(let i=1;i<=5;i++){
+         //   document.write(i)
+        //}
+        for(let i=0;i<7;i=i+2){//for(initialization,condition,increment/decrement) 
+        // in i=0 --> 0>7 --> 0+2=2 --> 2>7 --> 2+2=4 -->
+        //  4>7 --> 4+2=6 --> 6>7 --> 6+2=8 --> 8>7 --> false  
+            document.write(i+2)
+            document.write("<br>")
+            
+            
+        }
+        for(let i=0;i<6;i++){
+            document.write("ram")
+            document.write("<br>")
+        }
+        for(let i=10;i<16;i++){
+            document.write(i)
+            document.write("<br>")  
+        }
+        for(let i=0;i<11;i++){
+            document.write(i*i)
+            document.write("<br>")
+        }
+        for(let i=0;i<11;i++){
+            document.write(i*9)
+          
+            document.write("<br>")
+        }
+        const n = [1,2,3,4,5]
+        let sum =0
+        for(let i=0;i<n.length;i++){
+            sum = sum + n[i]
+            
+        }
+        document.write("<br>")
+        document.write(sum)
+       
+
+        </script>
+</body>
+</html>
