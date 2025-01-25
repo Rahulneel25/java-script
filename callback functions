@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //function greet(name,callback){
+         //   document.write(`hi iam ${name} from greet function  `)
+           // callback()
+        //}
+        //function goodbye(){
+          //  document.write("goodbye")
+        //}
+        //greet("ram",goodbye) 
+
+        //let promise = new Promise((resolve, reject) => {
+          //  let success = true;
+            //if (success) {
+              //  resolve("success");
+            //} else {
+              //  reject("failure");
+            //}
+            //document.write("hi iam in promise")
+        //});
+
+       // function mainfunction(callback){
+        //    document.write("executing main function")
+          //  callback()
+            // here we call the function
+        //}
+        //function callbackfunction(){
+          //  document.write("call back function executed")
+
+        //}
+        // second function is called by first as an argument and acces it
+        //second function is called by using callback
+        //mainfunction(callbackfunction)
+        //first function main one is executed and prits its content then it reaches callback functions content is executed
+       // function greet(name,callback){
+         //   document.write("hi "+name)
+           // callback()
+        //}
+        //function goodbye(){
+          //  document.write(" goodbye ")
+        //}
+        //greet(" ram ",goodbye)
+
+       // welcome = function(name,callback){
+         //   document.write("hi "+name)
+           // callback()
+        //}
+        //function hello(){
+          //  document.write("hello")
+            
+        //}
+        //welcome("ram",hello)
+        // we didnt passed a name but given it into the variables using anonymous functions
+       /*  greet=function(callback){
+            document.write("hi ")
+            setTimeout(function(){
+                document.write("iam from set timeout")
+            callback();
+        },3000);
+        }
+        function arrow(){
+            document.write("<br>")
+            document.write("iam from arrow function")
+        }
+        
+        greet(arrow) */
+    //     const numbers=[1,2,3,4,5];
+    //     const d=numbers.map(function(num){
+    //     return num*2;
+    //     document.write(d)
+    // });
+        function registerUser(username,password,callback){
+            document.write("registering user with "+username)
+            setTimeout(function(){
+                document.write("user"+username+"registered")
+                callback();
+            },3000);
+        }
+        function sendWelcomeEmail(email){
+            document.write("sending welcome email to "+email)
+        };
+        registerUser("ram","h123456@gmail.com", function() {
+            sendWelcomeEmail("h123456@gmail.com");
+        });
+    
+
+    </script>
+</body>
+</html>Eventual completion
+1)pending-still not completed
+2)fulfilled-completed
+3)rejected-operation is failed
+Example:
+Let myPromise=new promise((resolve,reject)=>
+{let success = true;}
+)
+Using allback with arraye methods(map)
+Const numbers=[1,2,3,4,5]
+Const d=numbers.map(function(num){
+Return num*2
+})
+Console.log(d)
+Map() is a built array method that callback function to process 
