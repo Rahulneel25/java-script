@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let mypromise= new Promise((resolve,reject)=>{
+    //           let success = true;
+    //           if (success){
+    //             resolve("successful");
+    //           }else{
+    //             reject("failure");
+    //           }
+
+    //     });
+    //     mypromise
+    //     .then(result=>{
+    //         console.log(result);
+    //     });
+    //     mypromise
+    //     .catch(error=>{
+    //         console.log(error);
+    //     });
+
+    // let promi=new Promise((resolve,reject)=>{
+    //     resolve(5);
+    // })
+    // promi.then(result=>{
+    //     console.log(result);
+    //     return result*2;
+    // })
+    // .then(result=>{
+    //     console.log(result);
+    //     return result+3;
+    // })
+    // .then(result=>{
+    //     console.log(result);
+        
+    // })
+    // .catch(error=>{
+    //     console.log("error",error);
+    // })
+        
+    let pro=new Promise((resolve,reject)=>{
+        resolve(5);
+    })
+    pro.then(result=>{
+        console.log(result)
+        setTimeout((pro)=>{
+            console.log("success")
+        },3000)
+    })
+    </script>
+</body>
+</html>
+
+PROMISE
+        // a promise is special js objectthat represents eventual completeion of an async function
+        //it allows to handle async more effficently than call backs 
+        //promise has 3 states pending,fulfilled,rejected
+        //pending:initial state,neither fulfilled nor rejected
+        //fulfilled:meaning that the operation completed successfully
+        //rejected:meaning that the operation failed
+1)To create a promise-new promise()
+Two parameters-
+Resolve-marks promise as successful 
+Reject-mark it as failed
+2)handling result:-
+.then() method is called when promise is fulfilled
+It will receive result  from  resolve()
+3).catch() is used for reject
+
+
