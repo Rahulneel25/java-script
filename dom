@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallareddy university</title>
+    <style>
+        .a{
+            color: red;
+        }
+        .b{
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "a">sai charan</h1>
+    <h1 id = "b"> Rahul </h1>
+    <h1 id = "c">sainath</h1>
+    <script>
+    let x = document.getElementById("a")
+    console.log(x)
+    </script>
+</body>
+</html>
+
+DOM(document object model)
+--It is used in web development , used to interact and manipulate the html documents
+When webpage is loaded the browser creates DOM of the webpage
+When html file is loaded into the browser , the javascript cant understand html document directly 
+DOM is basically representation of same html document but in a tree like structure composed of object
+KEYPOINTS:-
+1)structure:- the DOM represents the sstructure of HTML docu ment as a tree. Each node in tree represents elements, an attribute or text
+2) manipulation: using java script, you can interact with elements(buttons,paragraph)on the webpage,changing content , styles,can add,remove element
+3)event handling: you can handle interaction ,like click or pressing the button 
+4) wwwc(www consortium)
+DOM:- entry point of DOM 
+Methods of Document objects:
+--used to interact with and manipulate document
+Getting Element:-1)Getting an Element by id:
+2)by class
+3)by tag
+4)by query selector
+#id and class :- 
