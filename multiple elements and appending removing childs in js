@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "a">
+        <h1>Rahul</h1>
+        <h1>Revanth</h1>
+    </div>
+    <div id = "b">
+        <h1>Sathvik</h1>
+        <h1>Abhiram</h1>
+
+    </div>
+     <!-- <h1>Removing childnode</h1>
+    <h2>Iam kishore</h2>
+    <ul>
+        <li> Sainath </li>
+        <li> Saicharan</li>
+        <li>Kishore</li>  -->
+    </ul>
+    <script>
+        let n = document.createElement("h2")
+        n.textContent = "Saicharan is the team lead"
+        // get parent element
+        let p = document.getElementById("b")
+        // want to append new element to parent node
+        p.appendChild(n)
+        // log inner text of parent 
+        console.log(p)
+        console.log(p.innerText);
+        // const ul=document.querySelector('ul')
+        // const lis = document.querySelectorAll('li')
+        // for(const list of lis){
+        //     console.log(`Removing:${list.textContent}`)
+        //     ul.removeChild(list)
+        // }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const titles = ["sainath","sai charan","Rahul"]
+        // for(let i=0;i<titles.length;i++){
+        //     let title = document.createElement('h1');
+        //     title.className="a"
+        //     title.textContent = titles[i];
+        //     console.log(title)
+            
+        //     }
+
+        let title
+        for(let i=0;i<3;i++){
+            tilt=document.createElement('h2')
+            tilt.textContent =i;
+            console.log(tilt);
+        }
+        // let title
+        // for (let i =0;i<3;i++){
+        //     title = document.createE
+        // }
+    </script>
+</body>
+</html>
