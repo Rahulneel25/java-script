@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1>ravi</h1>
+        <h1 id = "r">ram</h1>
+    </div>
+    <div id="b">
+        <h2 id = "n">raju</h2>
+        <h2 >raghu</h2>
+    </div>
+
+    <script>
+        let n = document.createElement("h1")
+        n.textContent="version-it"
+        let r = document.createElement("h2")
+        r.textContent="Rahul"
+        let e = document.getElementById("n")
+        let m = document.getElementById("a")
+        let l = document.getElementById("r")
+        //replace all children with version it
+        m.replaceChildren(n)
+        e.replaceChild(r)
+        console.log(e)
+        
+        console.log(m)
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1>ravi</h1>
+        <h1 id = "r">ram</h1>
+    </div>
+    <div id="b">
+        <h2>raju</h2>
+        <h2 >raghu</h2>
+    </div>
+
+    <script>
+        let n = document.getElementById("a")
+        let l = document.getElementById("r")
+       n.removeChild(l);
+       console.log(n)
+       console.log(l)
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "a">
+        <h1 id = "n">Rahul</h1>
+        <h1 id = "r">Revanth</h1>
+    </div>
+    <div id = "b">
+        <h1>Sathvik</h1>
+        <h1>Abhiram</h1>
+
+    </div>
+  
+    <script>
+        let n = document.createElement("h2")
+        n.textContent = "Rahulneel"
+        //inserting rahulneel
+        let k = document.createElement("h2")
+        k.textContent = "Rafael"
+        //inserting rafael
+     
+        let p = document.getElementById("a")
+        let l = document.getElementById("r")
+        let m = document.getElementById("n")
+        
+        p.insertBefore(k,m)
+        p.insertBefore(n,l)
+        console.log(p)
+       
+       
+    </script>
+</body>
+</html>
