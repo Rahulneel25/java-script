@@ -1,0 +1,65 @@
+import React from "react";
+let name=prompt("");
+let age = prompt("enter the age")
+let a = parseInt(prompt("enter the number"))
+function profilecard(){
+       if(a>1){
+        return <h1>Welcome{name},{age}</h1>;
+        }
+        else{
+            return <h1>Please Login MR.{name}</h1>;
+}
+}
+export default profilecard;
+import { useState,useMemo } from "react";
+import React from "react";
+
+const products=[
+  {id :1,name:"Laptop",category:"Electronics"},
+  {id :2,name:"Headphones",category:"Electronics"},
+  {id :3,name:"Shoes",category:"Clothing"},
+  {id :4,name:"Shirt",category:"Clothing"},
+  {id :5,name:"phones",category:"Electronics"}
+
+]
+function ProductSearch(){
+  const [searchQuery,setSearchQuery]=useState("");
+const filterProducts = (query) => {
+  return products.filter(product =>
+    product.name.toLowerCase().includes(query.toLowerCase())
+  );
+};
+
+return (
+  <div>
+    <h1>Product Search</h1>
+    <input
+      type="text"
+      value={searchQuery}
+      placeholder="Search for Products"
+      onChange={(e) => setSearchQuery(e.target.value)}
+    />
+    <ul>
+      {filterProducts(searchQuery).map(product => (
+        <li key={product.id}>{product.name}</li>
+      ))}
+    </ul>
+  </div>
+);
+}
+
+
+
+// import React ,{useState}from 'react';
+
+
+ 
+
+ function App(){
+   return(
+      
+     <div className="App">
+       <profilecard/>
+     </div>
+   )
+ }
