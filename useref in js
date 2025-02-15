@@ -1,0 +1,131 @@
+// import { useState } from "react";
+// import ChildA from "./ChildA";
+// import ChildB from "./ChildB";  
+// import React from "react";
+// import Child from "./Child";
+import React,{useState,useEffect,useRef} from "react";
+
+function CounterWithPrev(){
+  const [count, setCount] = useState(0);
+  const prevCountref = useRef();
+
+  useEffect(()=>{
+    prevCountref.current = count;
+  },[count]
+)
+return(
+  <div>
+    <p>Count: {count}</p>
+    <p>Previous Count: {prevCountref.current}</p>
+    <button onClick={() => setCount(count + 1)}>Increment</button>  
+    
+  </div>
+)
+
+
+}
+export default CounterWithPrev;
+
+// use State= tracks the count value
+//useRef Stores previous value of 
+// const Parent = () => {
+//    const [message, setMessage] = useState('Hello World')};
+
+// const changeMessage=()=>{
+
+// }
+   
+//    return(
+//       <div>
+//          <h1>{message}</h1>
+//          <Child message={changeMessage}/>
+
+//       </div>
+//    )
+//APPLE            COUNTER
+// import { useReducer, useState, useContext, createContext } from 'react';
+// import ChildA from "./ChildA";
+// import ChildB from "./ChildB";
+
+// const DataContext = createContext();
+
+// function appleReducer(state = 3, action) {
+//   switch (action.type) {
+//     case 'ADD_APPLE':
+//       return state + 1;
+//     case 'REMOVE_APPLE':
+//       return state - 1;
+//     default:
+//       return state;
+//   }
+// }
+
+// function App() {
+//   const [state, dispatch] = useReducer(appleReducer, 3);
+
+//   return (
+//     <div style={{ padding: '20px', textAlign: 'center' }}>
+//       <h1 style={{ color: 'orange' }}>APPLE Counter</h1>
+//       <p style={{color: 'blue' }}> Number of APPLES: {state}</p>
+//       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/240px-Red_Apple.jpg" alt="Red Apple" style={{width: '200px', margin: '20px'}}/>
+//       <button
+//         onClick={() => dispatch({ type: 'ADD_APPLE' })}
+//         style={{
+//           backgroundColor: 'green',
+//           color: 'white',
+//           padding: '10px 20px',
+//           margin: '10px',
+//           border: 'none',
+//           borderRadius: '20px',
+//           cursor: 'pointer',
+//         }}
+//       >
+//         ADD APPLE
+//       </button>
+//       <button
+//         onClick={() => dispatch({ type: 'REMOVE_APPLE' })}
+//         style={{
+//           backgroundColor: 'red',
+//           color: 'white',
+//           padding: '10px 20px',
+//           margin: '10px',
+//           border: 'none',
+//           borderRadius: '20px',
+//           cursor: 'pointer',
+//         }}
+//       >
+//         REMOVE APPLE
+//       </button>
+//     </div>
+//   );
+// }
+
+// const Parent = () => {
+//   const [count, setCount] = useState(0);  
+
+//   const Increment = () => {
+//     setCount(c => c + 1);
+//   }
+
+//   return (
+//     <div>
+//       <ChildA />
+//       <ChildB count={count} increment={Increment} />
+//     </div>
+//   );
+// }
+
+// const ThemeToggler = () => {
+//   const [theme, setTheme] = useState('light');
+
+//   const toggleTheme = () => {
+//     setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+//   }
+
+//   return (
+//     <div style={{backgroundColor: theme === 'light' ? 'white' : 'black', color: theme === 'light' ? 'black' : 'white'}}>
+//       <h1>The current Theme is {theme}</h1>
+//       <button onClick={toggleTheme}>Toggle Theme</button>
+//     </div>
+//   );
+// }
